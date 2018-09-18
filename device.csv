@@ -1,0 +1,3 @@
+platformName,platformVersion,deviceName,udid,appPackage,appActivity,automationName,newCommandTimeout,noSign,noReset,port,bootstrapPort
+android,android 7,Meizu pro5,860BCMQ22MX4,com.netease.cloudmusic,activity.LoadingActivity,uiautomator2,7200,TRUE,TRUE,4023,4024
+android,android 6,Xiao mi4,8d2d44db,com.netease.cloudmusic,activity.LoadingActivity,uiautomator2,7200,TRUE,TRUE,4025,4026

@@ -1,0 +1,507 @@
+[35m[Appium][39m Welcome to Appium v1.9.0
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m   address: 127.0.0.1
+[35m[Appium][39m   port: 4023
+[35m[Appium][39m   bootstrapPort: 4024
+[35m[Appium][39m Appium REST http interface listener started on 127.0.0.1:4023
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[35m[HTTP][39m [90m{"capabilities":{"firstMatch":[{}],"alwaysMatch":{"platformName":"android"}},"desiredCapabilities":{"platformName":"android","platformVersion":"android 7","deviceName":"Meizu pro5","udid":"860BCMQ22MX4","appPackage":"com.netease.cloudmusic","appActivity":"activity.LoadingActivity","automationName":"uiautomator2","newCommandTimeout":"7200","noSign":"TRUE","noReset":"TRUE","port":"4023","bootstrapPort":"4024"}}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"platformName":"android","platformVersion":"android 7","deviceName":"Meizu pro5","udid":"860BCMQ22MX4","appPackage":"com.netease.cloudmusic","appActivity":"activity.LoadingActivity","automationName":"uiautomator2","newCommandTimeout":"7200","noSign":"TRUE","noReset":"TRUE","port":"4023","bootstrapPort":"4024"},null,{"firstMatch":[{}],"alwaysMatch":{"platformName":"android"}}]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1537263472912 (17:37:52 GMT+0800 (中国标准时间))
+[35m[Appium][39m Could not parse W3C capabilities: 'deviceName' can't be blank
+[35m[Appium][39m Trying to fix W3C capabilities by merging them with JSONWP caps
+[35m[BaseDriver][39m The capabilities ["platformVersion","deviceName","udid","appPackage","appActivity","automationName","newCommandTimeout","noSign","noReset","port","bootstrapPort"] are not standard capabilities and should have an extension prefix
+[35m[BaseDriver][39m Boolean capability passed in as string. Functionality may be compromised.
+[35m[Appium][39m Could not parse fixed W3C capabilities: 'newCommandTimeout' must be of type number. Falling back to JSONWP protocol
+[35m[Appium][39m Creating new AndroidUiautomator2Driver (v1.16.0) session
+[35m[Appium][39m Capabilities:
+[35m[Appium][39m   platformName: android
+[35m[Appium][39m   platformVersion: android 7
+[35m[Appium][39m   deviceName: Meizu pro5
+[35m[Appium][39m   udid: 860BCMQ22MX4
+[35m[Appium][39m   appPackage: com.netease.cloudmusic
+[35m[Appium][39m   appActivity: activity.LoadingActivity
+[35m[Appium][39m   automationName: uiautomator2
+[35m[Appium][39m   newCommandTimeout: 7200
+[35m[Appium][39m   noSign: TRUE
+[35m[Appium][39m   noReset: TRUE
+[35m[Appium][39m   port: 4023
+[35m[Appium][39m   bootstrapPort: 4024
+[debug] [35m[BaseDriver][39m Creating session with MJSONWP desired capabilities: {"platformName":"android","...
+[35m[BaseDriver][39m Capability 'noReset' changed from string to boolean. This may cause unexpected behavior
+[35m[BaseDriver][39m Capability 'noSign' changed from string to boolean. This may cause unexpected behavior
+[35m[BaseDriver][39m Capability 'newCommandTimeout' changed from string ('7200') to integer (7200). This may cause unexpected behavior
+[35m[BaseDriver][39m The following capabilities were provided, but are not recognized by appium: port, bootstrapPort.
+[35m[BaseDriver][39m Session created with session id: 6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6
+[35m[AndroidDriver][39m Java version is: 1.8.0_161
+[35m[ADB][39m Checking whether adb is present
+[35m[ADB][39m Found 1 'build-tools' folders under 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows' (newest first):
+[35m[ADB][39m     C:/SDK/android-sdk_r24.4.1-windows/android-sdk-windows/build-tools/27.0.3
+[35m[ADB][39m Using adb.exe from C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe
+[35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices...
+[debug] [35m[ADB][39m 2 device(s) connected
+[35m[AndroidDriver][39m Using device: 860BCMQ22MX4
+[debug] [35m[ADB][39m Setting device id to 860BCMQ22MX4
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell getprop ro.build.version.sdk'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 24
+[debug] [35m[ADB][39m Device API level: 24
+[35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell getprop ro.build.version.release'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 7.0
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell wm size'
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell wm density'
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell getprop ro.product.model'
+[debug] [35m[ADB][39m Current device property 'ro.product.model': PRO 5
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell getprop ro.product.manufacturer'
+[debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': Meizu
+[debug] [35m[ADB][39m Device API level: 24
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell am force-stop io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m Checking app cert for C:\Program Files (x86)\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.15.1.apk
+[35m[ADB][39m Using apksigner.bat from C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\build-tools\27.0.3\apksigner.bat
+[debug] [35m[ADB][39m Starting 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\build-tools\27.0.3\apksigner.bat' with args '["verify","--print-certs","C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v1.15.1.apk"]'
+[debug] [35m[ADB][39m apksigner stdout: Signer #1 certificate DN: C=US, O=Android, CN=Android Debug
+[debug] [35m[ADB][39m Signer #1 certificate SHA-256 digest: 707bc2493ea5b0267dc10a9bd4cedbab5431976f13274cdd045d93470179556d
+[debug] [35m[ADB][39m Signer #1 certificate SHA-1 digest: b8db0b11cec13cc7574a7d62f383ec16c0d275ee
+[debug] [35m[ADB][39m Signer #1 certificate MD5 digest: 4fcd3b10d1e80a20bbd28758c8a3e19b
+[debug] [35m[ADB][39m WARNING: META-INF/INDEX.LIST not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+[debug] [35m[ADB][39m WARNING: META-INF/io.netty.versions.properties not protected by signature. Unauthorized modifications to this JAR entry will not be detected. Delete or move the entry outside of META-INF/.
+[debug] [35m[ADB][39m 
+[debug] [35m[ADB][39m 'C:\Program Files (x86)\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.15.1.apk' is not signed with debug cert.
+[debug] [35m[ADB][39m Zip-aligning 'C:\Program Files (x86)\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.15.1.apk'
+[35m[ADB][39m Checking whether zipalign is present
+[35m[ADB][39m Using zipalign.exe from C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\build-tools\27.0.3\zipalign.exe
+[debug] [35m[ADB][39m Signing 'C:\Program Files (x86)\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.15.1.apk' with default cert
+[debug] [35m[ADB][39m Starting 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\build-tools\27.0.3\apksigner.bat' with args '["sign","--key","C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-adb\\keys\\testkey.pk8","--cert","C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-adb\\keys\\testkey.x509.pem","C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v1.15.1.apk"]'
+[35m[ADB][39m Got an error during apksigner execution: Command 'C\:\\SDK\\android-sdk_r24.4.1-windows\\android-sdk-windows\\build-tools\\27.0.3\\apksigner.bat sign --key 'C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-adb\\keys\\testkey.pk8' --cert 'C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-adb\\keys\\testkey.x509.pem' 'C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v1.15.1.apk'' exited with code 1
+[35m[ADB][39m apksigner stderr: Exception in thread "main" java.nio.file.AccessDeniedException: C:\Program Files (x86)\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.15.1.apk
+[35m[ADB][39m 	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+[35m[ADB][39m 	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+[35m[ADB][39m 	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+[35m[ADB][39m 	at sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:376)
+[35m[ADB][39m 	at sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:287)
+[35m[ADB][39m 	at java.nio.file.Files.move(Files.java:1395)
+[35m[ADB][39m 	at com.android.apksigner.ApkSignerTool.sign(ApkSignerTool.java:338)
+[35m[ADB][39m 	at com.android.apksigner.ApkSignerTool.main(ApkSignerTool.java:89)
+[35m[ADB][39m 
+[debug] [35m[ADB][39m Patching 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\build-tools\27.0.3\apksigner.bat...
+[debug] [35m[ADB][39m Checking app cert for C:\Program Files (x86)\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk
+[debug] [35m[ADB][39m Starting 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\build-tools\27.0.3\apksigner.bat' with args '["verify","--print-certs","C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk"]'
+[debug] [35m[ADB][39m apksigner stdout: Signer #1 certificate DN: C=US, O=Android, CN=Android Debug
+[debug] [35m[ADB][39m Signer #1 certificate SHA-256 digest: 707bc2493ea5b0267dc10a9bd4cedbab5431976f13274cdd045d93470179556d
+[debug] [35m[ADB][39m Signer #1 certificate SHA-1 digest: b8db0b11cec13cc7574a7d62f383ec16c0d275ee
+[debug] [35m[ADB][39m Signer #1 certificate MD5 digest: 4fcd3b10d1e80a20bbd28758c8a3e19b
+[debug] [35m[ADB][39m 
+[debug] [35m[ADB][39m 'C:\Program Files (x86)\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' is not signed with debug cert.
+[debug] [35m[ADB][39m Zip-aligning 'C:\Program Files (x86)\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+[debug] [35m[ADB][39m Signing 'C:\Program Files (x86)\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' with default cert
+[debug] [35m[ADB][39m Starting 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\build-tools\27.0.3\apksigner.bat' with args '["sign","--key","C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-adb\\keys\\testkey.pk8","--cert","C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-adb\\keys\\testkey.x509.pem","C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk"]'
+[35m[ADB][39m Got an error during apksigner execution: Command 'C\:\\SDK\\android-sdk_r24.4.1-windows\\android-sdk-windows\\build-tools\\27.0.3\\apksigner.bat sign --key 'C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-adb\\keys\\testkey.pk8' --cert 'C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-adb\\keys\\testkey.x509.pem' 'C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk'' exited with code 1
+[35m[ADB][39m apksigner stderr: Exception in thread "main" java.nio.file.AccessDeniedException: C:\Program Files (x86)\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk
+[35m[ADB][39m 	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+[35m[ADB][39m 	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+[35m[ADB][39m 	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+[35m[ADB][39m 	at sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:376)
+[35m[ADB][39m 	at sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:287)
+[35m[ADB][39m 	at java.nio.file.Files.move(Files.java:1395)
+[35m[ADB][39m 	at com.android.apksigner.ApkSignerTool.sign(ApkSignerTool.java:338)
+[35m[ADB][39m 	at com.android.apksigner.ApkSignerTool.main(ApkSignerTool.java:89)
+[35m[ADB][39m 
+[debug] [35m[ADB][39m Patching 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\build-tools\27.0.3\apksigner.bat...
+[debug] [35m[ADB][39m Uninstalling io.appium.uiautomator2.server
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell pm list packages io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell am force-stop io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 uninstall io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m 'adb uninstall io.appium.uiautomator2.server' command output: Success
+[35m[ADB][39m io.appium.uiautomator2.server was successfully uninstalled
+[debug] [35m[ADB][39m Uninstalling io.appium.uiautomator2.server.test
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server.test
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell pm list packages io.appium.uiautomator2.server.test'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell am force-stop io.appium.uiautomator2.server.test'
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 uninstall io.appium.uiautomator2.server.test'
+[debug] [35m[ADB][39m 'adb uninstall io.appium.uiautomator2.server.test' command output: Success
+[35m[ADB][39m io.appium.uiautomator2.server.test was successfully uninstalled
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell pm list packages io.appium.uiautomator2.server'
+[debug] [35m[ADB][39m App is not installed
+[debug] [35m[ADB][39m App 'C:\Program Files (x86)\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.15.1.apk' not installed. Installing
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 install 'C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-v1.15.1.apk''
+[debug] [35m[ADB][39m Install command stdout: Success
+[debug] [35m[ADB][39m Getting install status for io.appium.uiautomator2.server.test
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell pm list packages io.appium.uiautomator2.server.test'
+[debug] [35m[ADB][39m App is not installed
+[debug] [35m[ADB][39m App 'C:\Program Files (x86)\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk' not installed. Installing
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 install 'C:\\Program Files (x86)\\Appium\\resources\\app\\node_modules\\appium\\node_modules\\appium-uiautomator2-server\\apks\\appium-uiautomator2-server-debug-androidTest.apk''
+[debug] [35m[ADB][39m Install command stdout: Success
+[debug] [35m[UiAutomator2][39m Waiting up to 20000ms for instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' to be available
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell pm list instrumentation'
+[debug] [35m[UiAutomator2][39m Instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' available
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 wait-for-device'
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell echo ping'
+[debug] [35m[AndroidDriver][39m Pushing settings apk to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell pm list packages io.appium.settings'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.settings'
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys package io.appium.settings'
+[35m[ADB][39m Checking whether aapt is present
+[35m[ADB][39m Using aapt.exe from C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\build-tools\27.0.3\aapt.exe
+[debug] [35m[ADB][39m The installed 'io.appium.settings' package does not require upgrade ('2.3.0' >= '2.3.0')
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell ps'
+[debug] [35m[AndroidDriver][39m io.appium.settings is already running. There is no need to reset its permissions.
+[debug] [35m[ADB][39m Device API level: 24
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell appops set io.appium.settings android\:mock_location allow'
+[35m[AndroidDriver][39m setDeviceLanguageCountry requires language or country.
+[35m[AndroidDriver][39m Got language: 'null' and country: 'null'
+[debug] [35m[Logcat][39m Starting logcat capture
+[debug] [35m[AndroidDriver][39m Pushing unlock helper app to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.unlock
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell pm list packages io.appium.unlock'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.unlock'
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys package io.appium.unlock'
+[debug] [35m[ADB][39m The installed 'io.appium.unlock' package does not require upgrade ('2.0.0' >= '2.0.0')
+[debug] [35m[UiAutomator2][39m Forwarding UiAutomator2 Server port 6790 to 8200
+[debug] [35m[ADB][39m Forwarding system: 8200 to device: 6790
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 forward tcp\:8200 tcp\:6790'
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell rm -rf /data/local/tmp/strings.json'
+[debug] [35m[UiAutomator2][39m No app capability. Assuming it is already on the device
+[debug] [35m[ADB][39m Getting all processes with uiautomator
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell ps'
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell am force-stop io.appium.uiautomator2.server'
+[35m[UiAutomator2][39m Starting uiautomator2 server 1.15.1
+[35m[UiAutomator2][39m Using UIAutomator2 server from 'C:\Program Files (x86)\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-v1.15.1.apk' and test from 'C:\Program Files (x86)\Appium\resources\app\node_modules\appium\node_modules\appium-uiautomator2-server\apks\appium-uiautomator2-server-debug-androidTest.apk'
+[35m[UiAutomator2][39m Running command: 'adb -s 860BCMQ22MX4 shell am instrument -w io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner'
+[35m[UiAutomator2][39m Waiting up to 20000ms for UiAutomator2 to be online...
+[debug] [35m[JSONWP Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
+[debug] [35m[JSONWP Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
+[debug] [35m[JSONWP Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
+[debug] [35m[JSONWP Proxy][39m Matched '/status' to command name 'getStatus'
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"SESSIONID\",\"status\":0,\"value\":\"Status Invoked\"}"
+[debug] [35m[JSONWP Proxy][39m Matched '/session' to command name 'createSession'
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /session] to [POST http://localhost:8200/wd/hub/session] with body: {"desiredCapabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","platformVersion":"android 7","deviceName":"Meizu pro5","udid":"860BCMQ22MX4","appPackage":"com.netease.cloudmusic","appActivity":"activity.LoadingActivity","automationName":"uiautomator2","newCommandTimeout":7200,"noSign":true,"noReset":true,"port":"4023","bootstrapPort":"4024"},"platformName":"android","platformVersion":"7.0","deviceName":"860BCMQ22MX4","udid":"860BCMQ22MX4","appPackage":"com.netease.cloudmusic","appActivity":"activity.LoadingActivity","automationName":"uiautomator2","newCommandTimeout":7200,"noSign":true,"noReset":true,"port":"4023","bootstrapPort":"4024","deviceUDID":"860BCMQ22MX4","deviceScreenSize":"1080x1920","deviceScreenDensity":480,"deviceModel":"PRO 5","deviceManufacturer":"Meizu","deviceApiLevel":24}}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"d4eab2c5-a947-4c29-9df2-6f038d68ea1d","status":0,"value":"Created Session"}
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys window'
+[35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[35m[UiAutomator2][39m UiAutomator2 did not start the activity we were waiting for, 'com.netease.cloudmusic/activity.LoadingActivity'. Starting it ourselves
+[debug] [35m[ADB][39m Device API level: 24
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell am start -W -n com.netease.cloudmusic/activity.LoadingActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[debug] [35m[ADB][39m We tried to start an activity that doesn't exist, retrying with '.activity.LoadingActivity' activity name
+[debug] [35m[ADB][39m Device API level: 24
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell am start -W -n com.netease.cloudmusic/.activity.LoadingActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /appium/device/pixel_ratio] to [GET http://localhost:8200/wd/hub/session/d4eab2c5-a947-4c29-9df2-6f038d68ea1d/appium/device/pixel_ratio] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"d4eab2c5-a947-4c29-9df2-6f038d68ea1d\",\"status\":0,\"value\":3}"
+[debug] [35m[JSONWP Proxy][39m Matched '/appium/device/system_bars' to command name 'getSystemBars'
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /appium/device/system_bars] to [GET http://localhost:8200/wd/hub/session/d4eab2c5-a947-4c29-9df2-6f038d68ea1d/appium/device/system_bars] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"d4eab2c5-a947-4c29-9df2-6f038d68ea1d\",\"status\":0,\"value\":{\"statusBar\":66}}"
+[debug] [35m[JSONWP Proxy][39m Matched '/window/current/size' to command name 'getWindowSize'
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /window/current/size] to [GET http://localhost:8200/wd/hub/session/d4eab2c5-a947-4c29-9df2-6f038d68ea1d/window/current/size] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"d4eab2c5-a947-4c29-9df2-6f038d68ea1d\",\"status\":0,\"value\":{\"height\":1920,\"width\":1080}}"
+[35m[Appium][39m New AndroidUiautomator2Driver session created successfully, session 6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6 added to master session list
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1537263501589 (17:38:21 GMT+0800 (中国标准时间))
+[debug] [35m[MJSONWP][39m Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","platformVersion":"android 7","deviceName":"Meizu pro5","udid":"860BCMQ22MX4","appPackage":"com.netease.cloudmusic","appActivity":"activity.LoadingActivity","automationName":"uiautomator2","newCommandTimeout":7200,"noSign":true,"noReset":true,"port":"4023","bootstrapPort":"4024"},"platformName":"android","platformVersion":"7.0","deviceName":"860BCMQ22MX4","udid":"860BCMQ22MX4","appPackage":"com.netease.cloudmusic","appActivity":"activity.LoadingActivity","automationName":"uiautomator2","newCommandTimeout":7200,"noSign":true,"noReset":true,"port":"4023","bootstrapPort":"4024","deviceUDID":"860BCMQ22MX4","deviceScreenSize":"1080x1920","deviceScreenDensity":480,"deviceModel":"PRO 5","deviceManufacturer":"Meizu","deviceApiLevel":24,"pixelRatio":3,"statBarHeight":66,"viewportRect":{"l...
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m28689 ms - 1137[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/start_activity[39m
+[35m[HTTP][39m [90m{"appPackage":"com.netease.cloudmusic","appActivity":"activity.LoadingActivity","sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.startActivity() with args: ["com.netease.cloudmusic","activity.LoadingActivity",null,null,null,null,null,null,null,"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6",null,"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[AndroidDriver][39m Starting package 'com.netease.cloudmusic' and activity 'activity.LoadingActivity'
+[debug] [35m[ADB][39m Device API level: 24
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell am start -W -n com.netease.cloudmusic/activity.LoadingActivity -S'
+[debug] [35m[ADB][39m We tried to start an activity that doesn't exist, retrying with '.activity.LoadingActivity' activity name
+[debug] [35m[ADB][39m Device API level: 24
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell am start -W -n com.netease.cloudmusic/.activity.LoadingActivity -S'
+[debug] [35m[ADB][39m Waiting up to 20000ms for activity matching pkg: 'com.netease.cloudmusic' and activity: 'activity.LoadingActivity' to be focused
+[debug] [35m[ADB][39m Possible activities, to be checked: 'activity.LoadingActivity', 'com.netease.cloudmusic.activity.LoadingActivity'
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys window windows'
+[debug] [35m[ADB][39m Found package: 'com.netease.cloudmusic' and fully qualified activity name : 'com.netease.cloudmusic.activity.LoadingActivity'
+[debug] [35m[MJSONWP][39m Responding to client with driver.startActivity() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/start_activity [39m[32m200[39m [90m3016 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{"sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentActivity() with args: ["6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys window windows'
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentActivity() result: ".activity.LoadingActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity [39m[32m200[39m [90m130 ms - 99[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{"sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentActivity() with args: ["6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys window windows'
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentActivity() result: ".activity.LoadingActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity [39m[32m200[39m [90m136 ms - 99[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{"sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentActivity() with args: ["6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys window windows'
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentActivity() result: ".activity.LoadingActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity [39m[32m200[39m [90m124 ms - 99[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{"sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentActivity() with args: ["6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys window windows'
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentActivity() result: ".activity.MainActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity [39m[32m200[39m [90m152 ms - 96[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{"sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentActivity() with args: ["6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys window windows'
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentActivity() result: ".activity.MainActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity [39m[32m200[39m [90m171 ms - 96[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{"sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentActivity() with args: ["6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys window windows'
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentActivity() result: ".activity.MainActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity [39m[32m200[39m [90m158 ms - 96[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{"sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentActivity() with args: ["6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys window windows'
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentActivity() result: ".activity.MainActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity [39m[32m200[39m [90m97 ms - 96[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{"sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentActivity() with args: ["6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys window windows'
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentActivity() result: ".activity.MainActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity [39m[32m200[39m [90m131 ms - 96[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{"sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentActivity() with args: ["6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys window windows'
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentActivity() result: ".activity.MainActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity [39m[32m200[39m [90m141 ms - 96[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.netease.cloudmusic:id/p1","sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.findElement() with args: ["id","com.netease.cloudmusic:id/p1","6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[JSONWP Proxy][39m Matched '/element' to command name 'findElement'
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/d4eab2c5-a947-4c29-9df2-6f038d68ea1d/element] with body: {"strategy":"id","selector":"com.netease.cloudmusic:id/p1","context":"","multiple":false}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"d4eab2c5-a947-4c29-9df2-6f038d68ea1d","status":0,"value":{"ELEMENT":"05b02099-96e0-4649-a6ee-28be7501d467"}}
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElement() result: {"ELEMENT":"05b02099-96e0-4649-a6ee-28be7501d467"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/element [39m[32m200[39m [90m830 ms - 122[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/element/05b02099-96e0-4649-a6ee-28be7501d467/click[39m
+[35m[HTTP][39m [90m{"id":"05b02099-96e0-4649-a6ee-28be7501d467","sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.click() with args: ["05b02099-96e0-4649-a6ee-28be7501d467","6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[JSONWP Proxy][39m Matched '/element/05b02099-96e0-4649-a6ee-28be7501d467/click' to command name 'click'
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /element/05b02099-96e0-4649-a6ee-28be7501d467/click] to [POST http://localhost:8200/wd/hub/session/d4eab2c5-a947-4c29-9df2-6f038d68ea1d/element/05b02099-96e0-4649-a6ee-28be7501d467/click] with body: {"element":"05b02099-96e0-4649-a6ee-28be7501d467"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"d4eab2c5-a947-4c29-9df2-6f038d68ea1d","status":0,"value":true}
+[debug] [35m[MJSONWP][39m Responding to client with driver.click() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/element/05b02099-96e0-4649-a6ee-28be7501d467/click [39m[32m200[39m [90m52 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.netease.cloudmusic:id/a_0","sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.findElement() with args: ["id","com.netease.cloudmusic:id/a_0","6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[JSONWP Proxy][39m Matched '/element' to command name 'findElement'
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/d4eab2c5-a947-4c29-9df2-6f038d68ea1d/element] with body: {"strategy":"id","selector":"com.netease.cloudmusic:id/a_0","context":"","multiple":false}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"d4eab2c5-a947-4c29-9df2-6f038d68ea1d","status":0,"value":{"ELEMENT":"e75fd2a0-a8fa-421c-851a-58cbddaf9365"}}
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElement() result: {"ELEMENT":"e75fd2a0-a8fa-421c-851a-58cbddaf9365"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/element [39m[32m200[39m [90m214 ms - 122[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/element/e75fd2a0-a8fa-421c-851a-58cbddaf9365/displayed[39m
+[35m[HTTP][39m [90m{"id":"e75fd2a0-a8fa-421c-851a-58cbddaf9365","sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.elementDisplayed() with args: ["e75fd2a0-a8fa-421c-851a-58cbddaf9365","6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[JSONWP Proxy][39m Matched '/element/e75fd2a0-a8fa-421c-851a-58cbddaf9365/attribute/displayed' to command name 'getAttribute'
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /element/e75fd2a0-a8fa-421c-851a-58cbddaf9365/attribute/displayed] to [GET http://localhost:8200/wd/hub/session/d4eab2c5-a947-4c29-9df2-6f038d68ea1d/element/e75fd2a0-a8fa-421c-851a-58cbddaf9365/attribute/displayed] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"d4eab2c5-a947-4c29-9df2-6f038d68ea1d\",\"status\":0,\"value\":\"true\"}"
+[debug] [35m[MJSONWP][39m Responding to client with driver.elementDisplayed() result: true
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/element/e75fd2a0-a8fa-421c-851a-58cbddaf9365/displayed [39m[32m200[39m [90m34 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/keyevent[39m
+[35m[HTTP][39m [90m{"keycode":"3","sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.keyevent() with args: ["3",null,"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6",null,"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[UiAutomator2][39m Ignoring metastate undefined
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell input keyevent 3'
+[debug] [35m[MJSONWP][39m Responding to client with driver.keyevent() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/keyevent [39m[32m200[39m [90m625 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/start_activity[39m
+[35m[HTTP][39m [90m{"appPackage":"com.netease.cloudmusic","appActivity":"activity.LoadingActivity","sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.startActivity() with args: ["com.netease.cloudmusic","activity.LoadingActivity",null,null,null,null,null,null,null,"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6",null,"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[AndroidDriver][39m Starting package 'com.netease.cloudmusic' and activity 'activity.LoadingActivity'
+[debug] [35m[ADB][39m Device API level: 24
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell am start -W -n com.netease.cloudmusic/activity.LoadingActivity -S'
+[debug] [35m[ADB][39m We tried to start an activity that doesn't exist, retrying with '.activity.LoadingActivity' activity name
+[debug] [35m[ADB][39m Device API level: 24
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell am start -W -n com.netease.cloudmusic/.activity.LoadingActivity -S'
+[debug] [35m[ADB][39m Waiting up to 20000ms for activity matching pkg: 'com.netease.cloudmusic' and activity: 'activity.LoadingActivity' to be focused
+[debug] [35m[ADB][39m Possible activities, to be checked: 'activity.LoadingActivity', 'com.netease.cloudmusic.activity.LoadingActivity'
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys window windows'
+[debug] [35m[ADB][39m Found package: 'com.netease.cloudmusic' and fully qualified activity name : 'com.netease.cloudmusic.activity.LoadingActivity'
+[debug] [35m[MJSONWP][39m Responding to client with driver.startActivity() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/start_activity [39m[32m200[39m [90m3019 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{"sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentActivity() with args: ["6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys window windows'
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentActivity() result: ".activity.LoadingActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity [39m[32m200[39m [90m81 ms - 99[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{"sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentActivity() with args: ["6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys window windows'
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentActivity() result: ".activity.LoadingActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity [39m[32m200[39m [90m65 ms - 99[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{"sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentActivity() with args: ["6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys window windows'
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentActivity() result: ".activity.LoadingActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity [39m[32m200[39m [90m136 ms - 99[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{"sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentActivity() with args: ["6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys window windows'
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentActivity() result: ".activity.MainActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity [39m[32m200[39m [90m117 ms - 96[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{"sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentActivity() with args: ["6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys window windows'
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentActivity() result: ".activity.MainActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity [39m[32m200[39m [90m117 ms - 96[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{"sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentActivity() with args: ["6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys window windows'
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentActivity() result: ".activity.MainActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity [39m[32m200[39m [90m103 ms - 96[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{"sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentActivity() with args: ["6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys window windows'
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentActivity() result: ".activity.MainActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity [39m[32m200[39m [90m122 ms - 96[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{"sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentActivity() with args: ["6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys window windows'
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentActivity() result: ".activity.MainActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity [39m[32m200[39m [90m68 ms - 96[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity[39m
+[35m[HTTP][39m [90m{"sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getCurrentActivity() with args: ["6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[ADB][39m Getting focused package and activity
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell dumpsys window windows'
+[debug] [35m[MJSONWP][39m Responding to client with driver.getCurrentActivity() result: ".activity.MainActivity"
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/current_activity [39m[32m200[39m [90m128 ms - 96[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.netease.cloudmusic:id/ayx","sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.findElement() with args: ["id","com.netease.cloudmusic:id/ayx","6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[JSONWP Proxy][39m Matched '/element' to command name 'findElement'
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/d4eab2c5-a947-4c29-9df2-6f038d68ea1d/element] with body: {"strategy":"id","selector":"com.netease.cloudmusic:id/ayx","context":"","multiple":false}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"d4eab2c5-a947-4c29-9df2-6f038d68ea1d","status":0,"value":{"ELEMENT":"197eb2e8-9386-43cd-8e00-fae5ecd0b7be"}}
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElement() result: {"ELEMENT":"197eb2e8-9386-43cd-8e00-fae5ecd0b7be"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/element [39m[32m200[39m [90m70 ms - 122[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/element/197eb2e8-9386-43cd-8e00-fae5ecd0b7be/click[39m
+[35m[HTTP][39m [90m{"id":"197eb2e8-9386-43cd-8e00-fae5ecd0b7be","sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.click() with args: ["197eb2e8-9386-43cd-8e00-fae5ecd0b7be","6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[JSONWP Proxy][39m Matched '/element/197eb2e8-9386-43cd-8e00-fae5ecd0b7be/click' to command name 'click'
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /element/197eb2e8-9386-43cd-8e00-fae5ecd0b7be/click] to [POST http://localhost:8200/wd/hub/session/d4eab2c5-a947-4c29-9df2-6f038d68ea1d/element/197eb2e8-9386-43cd-8e00-fae5ecd0b7be/click] with body: {"element":"197eb2e8-9386-43cd-8e00-fae5ecd0b7be"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"d4eab2c5-a947-4c29-9df2-6f038d68ea1d","status":0,"value":true}
+[debug] [35m[MJSONWP][39m Responding to client with driver.click() result: true
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/element/197eb2e8-9386-43cd-8e00-fae5ecd0b7be/click [39m[32m200[39m [90m36 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/element[39m
+[35m[HTTP][39m [90m{"using":"id","value":"com.netease.cloudmusic:id/b47","sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.findElement() with args: ["id","com.netease.cloudmusic:id/b47","6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[BaseDriver][39m Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [35m[BaseDriver][39m Waiting up to 0 ms for condition
+[debug] [35m[JSONWP Proxy][39m Matched '/element' to command name 'findElement'
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/d4eab2c5-a947-4c29-9df2-6f038d68ea1d/element] with body: {"strategy":"id","selector":"com.netease.cloudmusic:id/b47","context":"","multiple":false}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"d4eab2c5-a947-4c29-9df2-6f038d68ea1d","status":0,"value":{"ELEMENT":"73d9ba37-ae86-4ec3-b4e0-adfa5f1260d9"}}
+[debug] [35m[MJSONWP][39m Responding to client with driver.findElement() result: {"ELEMENT":"73d9ba37-ae86-4ec3-b4e0-adfa5f1260d9"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/element [39m[32m200[39m [90m87 ms - 122[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/element/73d9ba37-ae86-4ec3-b4e0-adfa5f1260d9/displayed[39m
+[35m[HTTP][39m [90m{"id":"73d9ba37-ae86-4ec3-b4e0-adfa5f1260d9","sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.elementDisplayed() with args: ["73d9ba37-ae86-4ec3-b4e0-adfa5f1260d9","6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[JSONWP Proxy][39m Matched '/element/73d9ba37-ae86-4ec3-b4e0-adfa5f1260d9/attribute/displayed' to command name 'getAttribute'
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /element/73d9ba37-ae86-4ec3-b4e0-adfa5f1260d9/attribute/displayed] to [GET http://localhost:8200/wd/hub/session/d4eab2c5-a947-4c29-9df2-6f038d68ea1d/element/73d9ba37-ae86-4ec3-b4e0-adfa5f1260d9/attribute/displayed] with body: {}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"d4eab2c5-a947-4c29-9df2-6f038d68ea1d\",\"status\":0,\"value\":\"true\"}"
+[debug] [35m[MJSONWP][39m Responding to client with driver.elementDisplayed() result: true
+[35m[HTTP][39m [37m<-- GET /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/element/73d9ba37-ae86-4ec3-b4e0-adfa5f1260d9/displayed [39m[32m200[39m [90m55 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/keyevent[39m
+[35m[HTTP][39m [90m{"keycode":"3","sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.keyevent() with args: ["3",null,"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6",null,"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[UiAutomator2][39m Ignoring metastate undefined
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell input keyevent 3'
+[debug] [35m[MJSONWP][39m Responding to client with driver.keyevent() result: null
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6/appium/device/keyevent [39m[32m200[39m [90m658 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mDELETE[39m [37m/wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6[39m
+[35m[HTTP][39m [90m{"sessionId":"6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.deleteSession() with args: ["6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6"]
+[debug] [35m[BaseDriver][39m Event 'quitSessionRequested' logged at 1537263534805 (17:38:54 GMT+0800 (中国标准时间))
+[35m[Appium][39m Removing session 6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6 from our master session list
+[debug] [35m[UiAutomator2][39m Deleting UiAutomator2 session
+[debug] [35m[UiAutomator2][39m Deleting UiAutomator2 server session
+[debug] [35m[JSONWP Proxy][39m Matched '/' to command name 'deleteSession'
+[debug] [35m[JSONWP Proxy][39m Proxying [DELETE /] to [DELETE http://localhost:8200/wd/hub/session/d4eab2c5-a947-4c29-9df2-6f038d68ea1d] with no body
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"d4eab2c5-a947-4c29-9df2-6f038d68ea1d\",\"status\":0,\"value\":\"Session deleted\"}"
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 shell am force-stop com.netease.cloudmusic'
+[debug] [35m[Logcat][39m Stopping logcat capture
+[debug] [35m[ADB][39m Removing forwarded port socket connection: 8200 
+[debug] [35m[ADB][39m Running 'C:\SDK\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools\adb.exe -P 5037 -s 860BCMQ22MX4 forward --remove tcp\:8200'
+[debug] [35m[BaseDriver][39m Event 'quitSessionFinished' logged at 1537263535498 (17:38:55 GMT+0800 (中国标准时间))
+[debug] [35m[MJSONWP][39m Received response: null
+[debug] [35m[MJSONWP][39m But deleting session, so not returning
+[debug] [35m[MJSONWP][39m Responding to client with driver.deleteSession() result: null
+[35m[HTTP][39m [37m<-- DELETE /wd/hub/session/6aabdcc2-a3be-4d61-a4eb-0be06bb6b3d6 [39m[32m200[39m [90m695 ms - 76[39m
+[35m[HTTP][39m [90m[39m
